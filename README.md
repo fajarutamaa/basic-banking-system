@@ -4,8 +4,8 @@ This repository contains the results of challenge 2 work on the Backend Engineer
 
 # Skill-Metrics
 
-- Programming Algorithm 
-- Perform error handling 
-- Implement Asynchronous process 
-- Implement OOP 
-- Using Git
+- [x] Programming Algorithm 
+- [x] Perform error handling 
+- [x] Implement Asynchronous process 
+- [x] Implement OOP 
+- [x] Using Git
