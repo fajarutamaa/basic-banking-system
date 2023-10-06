@@ -2,7 +2,7 @@
 
 This repository contains the results of challenge 2 work on the Backend Engineering Fresh Graduate Academy (FGA) program with Binar Academy partners.
 
-# Skil-Metrics
+# Skill-Metrics
 
 - Programming Algorithm 
 - Perform error handling 
