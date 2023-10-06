@@ -75,7 +75,7 @@ class BankAccount {
     async showMessage(msg) {
         return new Promise((resolve) => {
             setTimeout(() => {
-                document.getElementById('saldo').innerHTML = 'Saldo Anda Tersisa Sebesar Rp. ' + this.saldo.toString()
+                document.getElementById('saldo').innerHTML = ' Rp. ' + this.saldo.toString()
                 alert(msg)
                 resolve('success')
             }, 3000)
@@ -89,4 +89,21 @@ class BankAccount {
 
 }
 
+class DateTransaction extends BankAccount {
+    constructor(balance = 0) {
+        super(balance)
+        this.saveTransaction = new Date()
+    }
+
+    dateProcess() {
+        var current_date = this.saveTransaction.getDate() + '-' + (this.saveTransaction.getUTCMonth() + 1) + '-' + this.saveTransaction.getFullYear()
+        document.getElementById('date').innerHTML = ' Transaksi Pada ' + current_date.toString()
+        console.log('Transaction at :', current_date)
+    }
+}
+
+
+const date = new DateTransaction()
 const bankAccount = new BankAccount()
+
+date.dateProcess()
