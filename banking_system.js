@@ -92,11 +92,11 @@ class BankAccount {
 class DateTransaction extends BankAccount {
     constructor(balance = 0) {
         super(balance)
-        this.saveTransaction = new Date()
+        this.dateTransaction = new Date()
     }
 
     dateProcess() {
-        var current_date = this.saveTransaction.getDate() + '-' + (this.saveTransaction.getUTCMonth() + 1) + '-' + this.saveTransaction.getFullYear()
+        var current_date = this.dateTransaction.getDate() + '-' + (this.dateTransaction.getUTCMonth() + 1) + '-' + this.dateTransaction.getFullYear()
         document.getElementById('date').innerHTML = ' Transaksi Pada ' + current_date.toString()
         console.log('Transaction at :', current_date)
     }
