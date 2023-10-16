@@ -27,3 +27,7 @@ This repository contains the results of challenge 2 work on the Backend Engineer
 # Study Case 
 
 In this case study, we will create a simple Basic Banking System using **Object-Oriented Programming (OOP)** concepts and simulate asynchronous transaction operations.
+
+# Flowchart
+
+![App Screenshot](Flowchart.png)
